@@ -4,6 +4,83 @@ Binaries are attached to the github release otherwise all images can be found [h
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.41.0 (2025-05-20)
+
+### Bug Fixes
+
+* accept specifiedBy directive ([#367](https://github.com/wundergraph/cosmo/issues/367)) ([49926da](https://github.com/wundergraph/cosmo/commit/49926daa7f9d17434f2b42893ec6a8b613e5731e)) (@Aenimus)
+* add caching for multigraph node paths ([#29](https://github.com/wundergraph/cosmo/issues/29)) ([106810b](https://github.com/wundergraph/cosmo/commit/106810b4f24118a707d1798c20d1c7e8975c9a8e)) (@Aenimus)
+* add validation for edfs arguments ([#1368](https://github.com/wundergraph/cosmo/issues/1368)) ([3a90563](https://github.com/wundergraph/cosmo/commit/3a90563346a74e574c70848474aec3d5ce811b61)) (@alepane21)
+* allow entity extensions in EDGs ([#1111](https://github.com/wundergraph/cosmo/issues/1111)) ([080e98a](https://github.com/wundergraph/cosmo/commit/080e98a34a86b5b0998aa0b6ee55d3a23ddbdcfa)) (@Aenimus)
+* allow integer to Float input coercion ([#1572](https://github.com/wundergraph/cosmo/issues/1572)) ([51c3d8e](https://github.com/wundergraph/cosmo/commit/51c3d8e11b6360f583f1809e2360c652a91659c6)) (@Aenimus)
+* another case for ancestor tag propagation ([#1273](https://github.com/wundergraph/cosmo/issues/1273)) ([2ad85b0](https://github.com/wundergraph/cosmo/commit/2ad85b0d042acbbbfd3b92983ce68053a5e3945d)) (@Aenimus)
+* authorization directive cascading ([#1733](https://github.com/wundergraph/cosmo/issues/1733)) ([0199fb5](https://github.com/wundergraph/cosmo/commit/0199fb5f88104a585b74a79638f54f1a3b812436)) (@Aenimus)
+* composition false flag ([#97](https://github.com/wundergraph/cosmo/issues/97)) ([a25cc7f](https://github.com/wundergraph/cosmo/commit/a25cc7f13adbf6f8e29113f49d364fc1f8bb9e81)) (@Aenimus)
+* consider nested entity keys to be shareable ([#86](https://github.com/wundergraph/cosmo/issues/86)) ([98b68a1](https://github.com/wundergraph/cosmo/commit/98b68a1bcbd40fc2c5ec0b9866218b6854cf95ee)) (@Aenimus)
+* do not include _Service and _entities in the federated graph ([#19](https://github.com/wundergraph/cosmo/issues/19)) ([97201ed](https://github.com/wundergraph/cosmo/commit/97201ed337205d96e55d1524e471a9116d93a389)) (@JivusAyrus)
+* edfs__NatsStreamConfiguration validation ([#1456](https://github.com/wundergraph/cosmo/issues/1456)) ([d453eab](https://github.com/wundergraph/cosmo/commit/d453eab5c72dedcb4d9d1c3f5adb11865f7017af)) (@alepane21)
+* edge case where [@external](https://github.com/external) impacted field shareability checks ([#483](https://github.com/wundergraph/cosmo/issues/483)) ([b48bcb0](https://github.com/wundergraph/cosmo/commit/b48bcb0b091c4bb539e04e3861b07b210320d2af)) (@Aenimus)
+* entity field edge cases ([#860](https://github.com/wundergraph/cosmo/issues/860)) ([e4f553f](https://github.com/wundergraph/cosmo/commit/e4f553f1b586aad3bff2ac2e1897e22479dce068)) (@Aenimus)
+* fix migration issues ([#47](https://github.com/wundergraph/cosmo/issues/47)) ([048398a](https://github.com/wundergraph/cosmo/commit/048398a3b5c4effaa1d7f6387c4ca02fbd28700c)) (@Aenimus)
+* fixed bug in path finding logic ([#312](https://github.com/wundergraph/cosmo/issues/312)) ([14ae242](https://github.com/wundergraph/cosmo/commit/14ae24268cca5418f0b049aba946cf71c4a391bc)) (@Aenimus)
+* handle missing query root type without fields ([#311](https://github.com/wundergraph/cosmo/issues/311)) ([6334fac](https://github.com/wundergraph/cosmo/commit/6334facd66a925fa07e8444570031b644979e9a3)) (@Aenimus)
+* if a type has already been overridden, add the new field names t… ([#363](https://github.com/wundergraph/cosmo/issues/363)) ([fd0110d](https://github.com/wundergraph/cosmo/commit/fd0110d0069ff27a51a442ad8dc4133351f894af)) (@Aenimus)
+* if root type is renamed, also rename all references ([#661](https://github.com/wundergraph/cosmo/issues/661)) ([d4252fa](https://github.com/wundergraph/cosmo/commit/d4252faae8fb30a03e77b9c73999cae8f976cbdc)) (@Aenimus)
+* ignore [@external](https://github.com/external) on entity extension key fields ([#1611](https://github.com/wundergraph/cosmo/issues/1611)) ([b10cf69](https://github.com/wundergraph/cosmo/commit/b10cf69a7df2c5305e66fe744514a605c9a06505)) (@Aenimus)
+* ignore unknown router execution config fields ([#767](https://github.com/wundergraph/cosmo/issues/767)) ([649a0e1](https://github.com/wundergraph/cosmo/commit/649a0e1349820642491469890f9eaa7b1134e430)) (@Aenimus)
+* inaccessible enum values should not cause enum inconsistency errors ([#878](https://github.com/wundergraph/cosmo/issues/878)) ([910e214](https://github.com/wundergraph/cosmo/commit/910e214878636cba5516e296e304d45862aba095)) (@Aenimus)
+* meta data upsertion ([#1707](https://github.com/wundergraph/cosmo/issues/1707)) ([42649f2](https://github.com/wundergraph/cosmo/commit/42649f2c81d787fcb364329f70d15d27fe8e1cbf)) (@Aenimus)
+* propagate ancestor exclude tags ([#1272](https://github.com/wundergraph/cosmo/issues/1272)) ([b008d45](https://github.com/wundergraph/cosmo/commit/b008d4510ca004839c2d746d05f4e3173b01d748)) (@Aenimus)
+* provides with non-entity ([#989](https://github.com/wundergraph/cosmo/issues/989)) ([99f2101](https://github.com/wundergraph/cosmo/commit/99f210100af7ae3c8e68510457ded3f24403f2cd)) (@Aenimus)
+* regression composition of external directive applied to key fields ([#560](https://github.com/wundergraph/cosmo/issues/560)) ([d0a092a](https://github.com/wundergraph/cosmo/commit/d0a092a61b75489dc0c482905feb46dc8e0af364)) (@devsergiy)
+* remove federation fields from renamed root types ([#304](https://github.com/wundergraph/cosmo/issues/304)) ([659cbaf](https://github.com/wundergraph/cosmo/commit/659cbaf9647075a16f3d00fb7c0ae2239a0174b7)) (@Aenimus)
+* return error if override source and target are equivalent ([#362](https://github.com/wundergraph/cosmo/issues/362)) ([e12e4fa](https://github.com/wundergraph/cosmo/commit/e12e4fad0e9d7415e62d7ddbfb0fbafb9025251c)) (@Aenimus)
+* update packages to address vulnerabilities ([#1411](https://github.com/wundergraph/cosmo/issues/1411)) ([7e84900](https://github.com/wundergraph/cosmo/commit/7e84900ed705164d69c99afcf5a698b3298fb6ad)) (@JivusAyrus)
+* vite vulnerability ([#1823](https://github.com/wundergraph/cosmo/issues/1823)) ([05d5300](https://github.com/wundergraph/cosmo/commit/05d53004612958fe1dab2c292ec89ac4ac686b61)) (@JivusAyrus)
+
+### Features
+
+* account for extension field arguments ([#94](https://github.com/wundergraph/cosmo/issues/94)) ([3ae8cbe](https://github.com/wundergraph/cosmo/commit/3ae8cbef79e9b5de9140f201cb867d05b9da7d31)) (@Aenimus)
+* add argument configuration ([#10](https://github.com/wundergraph/cosmo/issues/10)) ([48d909f](https://github.com/wundergraph/cosmo/commit/48d909f4de954c2401b557ed6a9f58915388f679)) (@Aenimus)
+* add authorization directive support for interfaces and interfac… ([#492](https://github.com/wundergraph/cosmo/issues/492)) ([0fc0cac](https://github.com/wundergraph/cosmo/commit/0fc0cac055b708209128c081a4643f85b9936766)) (@Aenimus)
+* add compatibility handshake between router and execution config ([#1534](https://github.com/wundergraph/cosmo/issues/1534)) ([4b8d60a](https://github.com/wundergraph/cosmo/commit/4b8d60ac48e1777069d68407ce72ea1d813155ca)) (@Aenimus)
+* add composition versioning ([#1575](https://github.com/wundergraph/cosmo/issues/1575)) ([ee32cbb](https://github.com/wundergraph/cosmo/commit/ee32cbb3dbe7c46fa984920bbd95e4a00d01c9c3)) (@Aenimus)
+* add configurable schema linting ([#596](https://github.com/wundergraph/cosmo/issues/596)) ([c662485](https://github.com/wundergraph/cosmo/commit/c66248529c5bc13e795725c82ba50dbad79451ae)) (@JivusAyrus)
+* add edfs validation; add event source name keys to config ([#624](https://github.com/wundergraph/cosmo/issues/624)) ([bf03bb8](https://github.com/wundergraph/cosmo/commit/bf03bb8fca1838fefebcb150f8924ec52fb8bdb5)) (@Aenimus)
+* add graph pruning ([#1133](https://github.com/wundergraph/cosmo/issues/1133)) ([b5718cd](https://github.com/wundergraph/cosmo/commit/b5718cd66bc7f0d14cb16b3d0a6d395e846968e4)) (@JivusAyrus)
+* add map of key field sets to which some key field coords contri… ([#1717](https://github.com/wundergraph/cosmo/issues/1717)) ([02f05e2](https://github.com/wundergraph/cosmo/commit/02f05e28e76078a098ddc4a8562d392faa74e1f9)) (@Aenimus)
+* add missing indexes, upgrade drizzle ([#1309](https://github.com/wundergraph/cosmo/issues/1309)) ([5b022e5](https://github.com/wundergraph/cosmo/commit/5b022e51ca6c9378377a7fb35fc4b2ddaad1ad06)) (@StarpTech)
+* add NATS to the router ([#333](https://github.com/wundergraph/cosmo/issues/333)) ([9c8303b](https://github.com/wundergraph/cosmo/commit/9c8303ba6d49a3dea682ff598210b2891a8dd29c)) (@fiam)
+* add subgraph property to Warnings ([#1355](https://github.com/wundergraph/cosmo/issues/1355)) ([cacc0f3](https://github.com/wundergraph/cosmo/commit/cacc0f3c01673b7bf1ea8d20305d04939ca3351e)) (@Aenimus)
+* add support of interface objects ([#407](https://github.com/wundergraph/cosmo/issues/407)) ([3d7b0e1](https://github.com/wundergraph/cosmo/commit/3d7b0e1f55fd8087945923a8e4f5e7d66f6b559a)) (@Aenimus)
+* add validation for V2 [@external](https://github.com/external) directive ([#1392](https://github.com/wundergraph/cosmo/issues/1392)) ([d2a8f73](https://github.com/wundergraph/cosmo/commit/d2a8f73e1c47b62a435ddacc3ceffd7d7abd7b9f)) (@Aenimus)
+* allow arguments in [@requires](https://github.com/requires) and [@provides](https://github.com/provides) ([#122](https://github.com/wundergraph/cosmo/issues/122)) ([2925f23](https://github.com/wundergraph/cosmo/commit/2925f23ba70dda5485f33c6950e979d956f46775)) (@Aenimus)
+* edfs nats create bespoke consumer ([#1443](https://github.com/wundergraph/cosmo/issues/1443)) ([af97af7](https://github.com/wundergraph/cosmo/commit/af97af71af0eb2de20dd5a0e0bc8cc454f1b0e38)) (@alepane21)
+* expose type data and record subgraphs for enums ([#1495](https://github.com/wundergraph/cosmo/issues/1495)) ([9e13f28](https://github.com/wundergraph/cosmo/commit/9e13f28c0a90b0d2f335c9b31f35e728c4a1799c)) (@thisisnithin)
+* feature flags ([#853](https://github.com/wundergraph/cosmo/issues/853)) ([5461bb5](https://github.com/wundergraph/cosmo/commit/5461bb5a529decd51a1b22be0a5301936b8ad392)) (@JivusAyrus)
+* handle creating, publishing, and updating Event-Driven Graphs ([#855](https://github.com/wundergraph/cosmo/issues/855)) ([fc2a8f2](https://github.com/wundergraph/cosmo/commit/fc2a8f20b97a17d0927c589f81df66ff7abf78c5)) (@Aenimus)
+* implement [@openfed](https://github.com/openfed)__configureDescription ([#1568](https://github.com/wundergraph/cosmo/issues/1568)) ([28398c1](https://github.com/wundergraph/cosmo/commit/28398c19afb33dfad816c3779024d6edb5047c84)) (@Aenimus)
+* implement [@override](https://github.com/override) ([#246](https://github.com/wundergraph/cosmo/issues/246)) ([b6d0448](https://github.com/wundergraph/cosmo/commit/b6d044861e918f7c82931e1d5374fc7f6fc01daa)) (@Aenimus)
+* implement authorization directives ([#448](https://github.com/wundergraph/cosmo/issues/448)) ([181d89d](https://github.com/wundergraph/cosmo/commit/181d89d8e7dbf8eb23cddfa0b6c91c840a2986b0)) (@Aenimus)
+* implement foundations for entity interfaces ([#359](https://github.com/wundergraph/cosmo/issues/359)) ([e2fcec7](https://github.com/wundergraph/cosmo/commit/e2fcec7aa3f286159a1ad21d606ead41cf1c883e)) (@Aenimus)
+* implement key resolvable false and implicit entities ([#445](https://github.com/wundergraph/cosmo/issues/445)) ([5685a43](https://github.com/wundergraph/cosmo/commit/5685a439c7a467e8f195948a5021a5511d91c870)) (@Aenimus)
+* implement subscription filter ([#780](https://github.com/wundergraph/cosmo/issues/780)) ([444a766](https://github.com/wundergraph/cosmo/commit/444a766b07de1998df52174a5a2e65086605e14c)) (@Aenimus)
+* implement warnings foundation ([#373](https://github.com/wundergraph/cosmo/issues/373)) ([e8cdc0a](https://github.com/wundergraph/cosmo/commit/e8cdc0a1c3917ffc00804b6ad6c5b27cdcd8da5a)) (@Aenimus)
+* move to new connectrpc packages ([#32](https://github.com/wundergraph/cosmo/issues/32)) ([4c8423b](https://github.com/wundergraph/cosmo/commit/4c8423bf377b63af6a42a42d7d5fc1ce2db1f09e)) (@StarpTech)
+* prepare release pipeline ([#1](https://github.com/wundergraph/cosmo/issues/1)) ([747aa47](https://github.com/wundergraph/cosmo/commit/747aa47d5e965d1b74862fbb5598bafb2fa05ee2)) (@StarpTech)
+* refactor edfs and add kafka support ([#770](https://github.com/wundergraph/cosmo/issues/770)) ([d659067](https://github.com/wundergraph/cosmo/commit/d659067fd1d094621788f42bac6d121b0831ebb7)) (@StarpTech)
+* refactor FieldSet ([#71](https://github.com/wundergraph/cosmo/issues/71)) ([45224d6](https://github.com/wundergraph/cosmo/commit/45224d6b6a2d5a2689fd034947a1acd69572e9c6)) (@Aenimus)
+* rewrite resolvability checker ([#964](https://github.com/wundergraph/cosmo/issues/964)) ([c323f01](https://github.com/wundergraph/cosmo/commit/c323f01d52a853b04a3b130627a969313eceaf65)) (@Aenimus)
+* support edfs subscription stream/consumer; multiple subjects ([#685](https://github.com/wundergraph/cosmo/issues/685)) ([c70b2ae](https://github.com/wundergraph/cosmo/commit/c70b2aefd39c45b5f98eae8a3c43f639d56064b2)) (@Aenimus)
+* support entity targets (implicit keys) ([#724](https://github.com/wundergraph/cosmo/issues/724)) ([4aa2c86](https://github.com/wundergraph/cosmo/commit/4aa2c86961384d913e964437b7ea369accb891c7)) (@Aenimus)
+* support inaccessible and add foundation for contracts ([#764](https://github.com/wundergraph/cosmo/issues/764)) ([08a7db2](https://github.com/wundergraph/cosmo/commit/08a7db222ce1763ffe8062d3792c41e0c54b4224)) (@Aenimus)
+* track subgraph names for unions and scalars ([#1788](https://github.com/wundergraph/cosmo/issues/1788)) ([de8ae0c](https://github.com/wundergraph/cosmo/commit/de8ae0cfcbdfc296cbfc54448a540c4613fcb632)) (@thisisnithin)
+* use metric data for dashboard stats ([#169](https://github.com/wundergraph/cosmo/issues/169)) ([e25fe32](https://github.com/wundergraph/cosmo/commit/e25fe32cdc053d658b0b0cdcd819b039be3341e6)) (@StarpTech)
+
+### Reverts
+
+* Revert "chore(release): Publish [skip ci]" ([feaf2ef](https://github.com/wundergraph/cosmo/commit/feaf2ef49321388daff7c4d9f4558cdda78b5744)) (@StarpTech)
+
 ## [0.39.1](https://github.com/wundergraph/cosmo/compare/@wundergraph/composition@0.39.0...@wundergraph/composition@0.39.1) (2025-05-02)
 
 ### Bug Fixes

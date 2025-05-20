@@ -4,6 +4,66 @@ Binaries are attached to the github release otherwise all images can be found [h
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.38.0 (2025-05-20)
+
+### Bug Fixes
+
+* accept specifiedBy directive ([#367](https://github.com/wundergraph/cosmo/issues/367)) ([49926da](https://github.com/wundergraph/cosmo/commit/49926daa7f9d17434f2b42893ec6a8b613e5731e)) (@Aenimus)
+* authorization directive cascading ([#1733](https://github.com/wundergraph/cosmo/issues/1733)) ([0199fb5](https://github.com/wundergraph/cosmo/commit/0199fb5f88104a585b74a79638f54f1a3b812436)) (@Aenimus)
+* ci ([#20](https://github.com/wundergraph/cosmo/issues/20)) ([e676b1a](https://github.com/wundergraph/cosmo/commit/e676b1a6dfeaa1ff8b6d55f818ae301f49deea4c)) (@JivusAyrus)
+* fix migration issues ([#47](https://github.com/wundergraph/cosmo/issues/47)) ([048398a](https://github.com/wundergraph/cosmo/commit/048398a3b5c4effaa1d7f6387c4ca02fbd28700c)) (@Aenimus)
+* flickering issue on change of orgs ([#147](https://github.com/wundergraph/cosmo/issues/147)) ([eadbb77](https://github.com/wundergraph/cosmo/commit/eadbb775e63cd10488c21079fed14e59771249c7)) (@JivusAyrus)
+* ignore [@external](https://github.com/external) on entity extension key fields ([#1611](https://github.com/wundergraph/cosmo/issues/1611)) ([b10cf69](https://github.com/wundergraph/cosmo/commit/b10cf69a7df2c5305e66fe744514a605c9a06505)) (@Aenimus)
+* ignore unknown router execution config fields ([#767](https://github.com/wundergraph/cosmo/issues/767)) ([649a0e1](https://github.com/wundergraph/cosmo/commit/649a0e1349820642491469890f9eaa7b1134e430)) (@Aenimus)
+* improve url normalization ([#1722](https://github.com/wundergraph/cosmo/issues/1722)) ([f97e50a](https://github.com/wundergraph/cosmo/commit/f97e50ad854e7b2c9a14b54b178d0055bc9653b1)) (@wilsonrivera)
+* pass renamed type to router config ([#43](https://github.com/wundergraph/cosmo/issues/43)) ([bf9365b](https://github.com/wundergraph/cosmo/commit/bf9365b38b904c897453fece0ad096c16b5142ab)) (@Aenimus)
+* provide default subscription protocol for composition-go ([#702](https://github.com/wundergraph/cosmo/issues/702)) ([53140ea](https://github.com/wundergraph/cosmo/commit/53140eabcc960bd95626837da308c86674aeb8a4)) (@Aenimus)
+* regression composition of external directive applied to key fields ([#560](https://github.com/wundergraph/cosmo/issues/560)) ([d0a092a](https://github.com/wundergraph/cosmo/commit/d0a092a61b75489dc0c482905feb46dc8e0af364)) (@devsergiy)
+* show latest valid subgraph schema ([#259](https://github.com/wundergraph/cosmo/issues/259)) ([d954b91](https://github.com/wundergraph/cosmo/commit/d954b91bd212ae1a33257c662a4ff8a2ac8c2b56)) (@JivusAyrus)
+* update packages to address vulnerabilities ([#1411](https://github.com/wundergraph/cosmo/issues/1411)) ([7e84900](https://github.com/wundergraph/cosmo/commit/7e84900ed705164d69c99afcf5a698b3298fb6ad)) (@JivusAyrus)
+* update subscription protocol ([#517](https://github.com/wundergraph/cosmo/issues/517)) ([5f21022](https://github.com/wundergraph/cosmo/commit/5f210225f2bbe81bd396151dd3e33d2c9074d6df)) (@thisisnithin)
+* vite vulnerability ([#1823](https://github.com/wundergraph/cosmo/issues/1823)) ([05d5300](https://github.com/wundergraph/cosmo/commit/05d53004612958fe1dab2c292ec89ac4ac686b61)) (@JivusAyrus)
+
+### Features
+
+* add argument configuration ([#10](https://github.com/wundergraph/cosmo/issues/10)) ([48d909f](https://github.com/wundergraph/cosmo/commit/48d909f4de954c2401b557ed6a9f58915388f679)) (@Aenimus)
+* add compatibility handshake between router and execution config ([#1534](https://github.com/wundergraph/cosmo/issues/1534)) ([4b8d60a](https://github.com/wundergraph/cosmo/commit/4b8d60ac48e1777069d68407ce72ea1d813155ca)) (@Aenimus)
+* add composition versioning ([#1575](https://github.com/wundergraph/cosmo/issues/1575)) ([ee32cbb](https://github.com/wundergraph/cosmo/commit/ee32cbb3dbe7c46fa984920bbd95e4a00d01c9c3)) (@Aenimus)
+* add edfs validation; add event source name keys to config ([#624](https://github.com/wundergraph/cosmo/issues/624)) ([bf03bb8](https://github.com/wundergraph/cosmo/commit/bf03bb8fca1838fefebcb150f8924ec52fb8bdb5)) (@Aenimus)
+* add missing indexes, upgrade drizzle ([#1309](https://github.com/wundergraph/cosmo/issues/1309)) ([5b022e5](https://github.com/wundergraph/cosmo/commit/5b022e51ca6c9378377a7fb35fc4b2ddaad1ad06)) (@StarpTech)
+* add NATS to the router ([#333](https://github.com/wundergraph/cosmo/issues/333)) ([9c8303b](https://github.com/wundergraph/cosmo/commit/9c8303ba6d49a3dea682ff598210b2891a8dd29c)) (@fiam)
+* add support for subscriptions ([#185](https://github.com/wundergraph/cosmo/issues/185)) ([5a78aa0](https://github.com/wundergraph/cosmo/commit/5a78aa01f60ac4184ac69b0bd72aa1ce467bff93)) (@fiam)
+* add support for websocket subprotocol ([#776](https://github.com/wundergraph/cosmo/issues/776)) ([e35aa26](https://github.com/wundergraph/cosmo/commit/e35aa262227b29f09ddfdd1ce361c010b769b2da)) (@JivusAyrus)
+* add support of interface objects ([#407](https://github.com/wundergraph/cosmo/issues/407)) ([3d7b0e1](https://github.com/wundergraph/cosmo/commit/3d7b0e1f55fd8087945923a8e4f5e7d66f6b559a)) (@Aenimus)
+* allow to update admission url ([#638](https://github.com/wundergraph/cosmo/issues/638)) ([c7f7ee6](https://github.com/wundergraph/cosmo/commit/c7f7ee65f7716d463fb0bf96cf386e54ba5f8b73)) (@StarpTech)
+* allow to upsert a subgraph on publish ([#196](https://github.com/wundergraph/cosmo/issues/196)) ([27a1630](https://github.com/wundergraph/cosmo/commit/27a1630574e817412a6d5fb2b304da645a31d481)) (@StarpTech)
+* cosmo ai, generate docs on publish ([#466](https://github.com/wundergraph/cosmo/issues/466)) ([033ff90](https://github.com/wundergraph/cosmo/commit/033ff9068716935a7d646adebcc0e2b776d0295d)) (@StarpTech)
+* edfs nats create bespoke consumer ([#1443](https://github.com/wundergraph/cosmo/issues/1443)) ([af97af7](https://github.com/wundergraph/cosmo/commit/af97af71af0eb2de20dd5a0e0bc8cc454f1b0e38)) (@alepane21)
+* feature flags ([#853](https://github.com/wundergraph/cosmo/issues/853)) ([5461bb5](https://github.com/wundergraph/cosmo/commit/5461bb5a529decd51a1b22be0a5301936b8ad392)) (@JivusAyrus)
+* implement [@openfed](https://github.com/openfed)__configureDescription ([#1568](https://github.com/wundergraph/cosmo/issues/1568)) ([28398c1](https://github.com/wundergraph/cosmo/commit/28398c19afb33dfad816c3779024d6edb5047c84)) (@Aenimus)
+* implement [@override](https://github.com/override) ([#246](https://github.com/wundergraph/cosmo/issues/246)) ([b6d0448](https://github.com/wundergraph/cosmo/commit/b6d044861e918f7c82931e1d5374fc7f6fc01daa)) (@Aenimus)
+* implement authorization directives ([#448](https://github.com/wundergraph/cosmo/issues/448)) ([181d89d](https://github.com/wundergraph/cosmo/commit/181d89d8e7dbf8eb23cddfa0b6c91c840a2986b0)) (@Aenimus)
+* implement foundations for entity interfaces ([#359](https://github.com/wundergraph/cosmo/issues/359)) ([e2fcec7](https://github.com/wundergraph/cosmo/commit/e2fcec7aa3f286159a1ad21d606ead41cf1c883e)) (@Aenimus)
+* implement key resolvable false and implicit entities ([#445](https://github.com/wundergraph/cosmo/issues/445)) ([5685a43](https://github.com/wundergraph/cosmo/commit/5685a439c7a467e8f195948a5021a5511d91c870)) (@Aenimus)
+* implement subscription filter ([#780](https://github.com/wundergraph/cosmo/issues/780)) ([444a766](https://github.com/wundergraph/cosmo/commit/444a766b07de1998df52174a5a2e65086605e14c)) (@Aenimus)
+* prepare release pipeline ([#3](https://github.com/wundergraph/cosmo/issues/3)) ([b6156fc](https://github.com/wundergraph/cosmo/commit/b6156fcf66254f08c3fba30f3987550ff121c3e5)) (@StarpTech)
+* provide router config over cdn ([#411](https://github.com/wundergraph/cosmo/issues/411)) ([f04ac84](https://github.com/wundergraph/cosmo/commit/f04ac84d2f6c155409f7db69e7646c04047e32b5)) (@JivusAyrus)
+* refactor edfs and add kafka support ([#770](https://github.com/wundergraph/cosmo/issues/770)) ([d659067](https://github.com/wundergraph/cosmo/commit/d659067fd1d094621788f42bac6d121b0831ebb7)) (@StarpTech)
+* refactor FieldSet ([#71](https://github.com/wundergraph/cosmo/issues/71)) ([45224d6](https://github.com/wundergraph/cosmo/commit/45224d6b6a2d5a2689fd034947a1acd69572e9c6)) (@Aenimus)
+* rewrite resolvability checker ([#964](https://github.com/wundergraph/cosmo/issues/964)) ([c323f01](https://github.com/wundergraph/cosmo/commit/c323f01d52a853b04a3b130627a969313eceaf65)) (@Aenimus)
+* router config signature validation through custom admission webhooks ([#628](https://github.com/wundergraph/cosmo/issues/628)) ([384fd7e](https://github.com/wundergraph/cosmo/commit/384fd7e3372479e96fccc4fc771dc4e9f9c84754)) (@StarpTech)
+* **router:** grpc go plugin system ([#1866](https://github.com/wundergraph/cosmo/issues/1866)) ([280a61d](https://github.com/wundergraph/cosmo/commit/280a61de4bd1328549a023d1a3a0b702d78453b8)) (@Noroth)
+* schema contracts ([#751](https://github.com/wundergraph/cosmo/issues/751)) ([1bc1a78](https://github.com/wundergraph/cosmo/commit/1bc1a787f046d25f0a4affb3fe42efe39a1c6539)) (@thisisnithin)
+* schema field level usage analytics ([#174](https://github.com/wundergraph/cosmo/issues/174)) ([4f257a7](https://github.com/wundergraph/cosmo/commit/4f257a71984e991be2304b09a083c69da65200d2)) (@StarpTech)
+* store subgraphs in router config ([#61](https://github.com/wundergraph/cosmo/issues/61)) ([de7b132](https://github.com/wundergraph/cosmo/commit/de7b13244755acd49c38ff1e6c537234ab506960)) (@thisisnithin)
+* support edfs subscription stream/consumer; multiple subjects ([#685](https://github.com/wundergraph/cosmo/issues/685)) ([c70b2ae](https://github.com/wundergraph/cosmo/commit/c70b2aefd39c45b5f98eae8a3c43f639d56064b2)) (@Aenimus)
+* support inaccessible and add foundation for contracts ([#764](https://github.com/wundergraph/cosmo/issues/764)) ([08a7db2](https://github.com/wundergraph/cosmo/commit/08a7db222ce1763ffe8062d3792c41e0c54b4224)) (@Aenimus)
+* support subgraph router url override ([#152](https://github.com/wundergraph/cosmo/issues/152)) ([25cbf83](https://github.com/wundergraph/cosmo/commit/25cbf83f307a2c0986ad4bcdfa723cdd5dfd3f02)) (@StarpTech)
+
+### Reverts
+
+* Revert "chore(release): Publish [skip ci]" ([feaf2ef](https://github.com/wundergraph/cosmo/commit/feaf2ef49321388daff7c4d9f4558cdda78b5744)) (@StarpTech)
+
 # [0.37.0](https://github.com/wundergraph/cosmo/compare/@wundergraph/cosmo-shared@0.36.17...@wundergraph/cosmo-shared@0.37.0) (2025-05-19)
 
 ### Features

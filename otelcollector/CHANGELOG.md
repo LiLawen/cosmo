@@ -4,6 +4,32 @@ Binaries are attached to the github release otherwise all images can be found [h
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.20.0 (2025-05-20)
+
+### Bug Fixes
+
+* follow GraphQL over HTTP in error handling ([#199](https://github.com/LiLawen/cosmo/issues/199)) ([8006267](https://github.com/LiLawen/cosmo/commit/800626773929923299ed88af44c50b187287cd25)) (@StarpTech)
+* image releases ([230fcef](https://github.com/LiLawen/cosmo/commit/230fcef52db8c36dd54ee8b5568eb627811d4fb1)) (@StarpTech)
+* reduce error logs ([#72](https://github.com/LiLawen/cosmo/issues/72)) ([cba6fef](https://github.com/LiLawen/cosmo/commit/cba6fefe854bc3852708fd6a37eb5fa07d7fea24)) (@StarpTech)
+* upgrade otel collector ([#475](https://github.com/LiLawen/cosmo/issues/475)) ([2d33978](https://github.com/LiLawen/cosmo/commit/2d339786d4cc1727b3fb6498606d11a059233b61)) (@StarpTech)
+
+### Features
+
+* add prometheus ([#31](https://github.com/LiLawen/cosmo/issues/31)) ([d318c73](https://github.com/LiLawen/cosmo/commit/d318c7331d77d21d0246344d76fbe0fc6b617174)) (@StarpTech)
+* allow to add custom OTEL attributes ([#856](https://github.com/LiLawen/cosmo/issues/856)) ([634fa85](https://github.com/LiLawen/cosmo/commit/634fa858f3ae437b1ebe46f39ed10195c0966885)) (@StarpTech)
+* feature flags ([#853](https://github.com/LiLawen/cosmo/issues/853)) ([5461bb5](https://github.com/LiLawen/cosmo/commit/5461bb5a529decd51a1b22be0a5301936b8ad392)) (@JivusAyrus)
+* follow prometheus naming convention when converting metrics ([#46](https://github.com/LiLawen/cosmo/issues/46)) ([b58dbe1](https://github.com/LiLawen/cosmo/commit/b58dbe1395ec4ffd155ded7c2df7996c15341dd2)) (@StarpTech)
+* implement metric backend ([#13](https://github.com/LiLawen/cosmo/issues/13)) ([4c0a790](https://github.com/LiLawen/cosmo/commit/4c0a790852542475e6d0533fdeea24f5b226bd7d)) (@StarpTech)
+* multi platform docker builds ([#665](https://github.com/LiLawen/cosmo/issues/665)) ([4c24d70](https://github.com/LiLawen/cosmo/commit/4c24d7075bd48cd946a1037bffc0c4fcaef74289)) (@StarpTech)
+* **otelcollector:** enable prometheus support for otelcollector and export it ([#984](https://github.com/LiLawen/cosmo/issues/984)) ([786391f](https://github.com/LiLawen/cosmo/commit/786391fc48def4648558042ef2cb05c99b010a7e)) (@AndreasZeissner)
+* prepare release pipeline ([#3](https://github.com/LiLawen/cosmo/issues/3)) ([b6156fc](https://github.com/LiLawen/cosmo/commit/b6156fcf66254f08c3fba30f3987550ff121c3e5)) (@StarpTech)
+* recommend GOMEMLIMIT and remove memory limiter ([#548](https://github.com/LiLawen/cosmo/issues/548)) ([4167082](https://github.com/LiLawen/cosmo/commit/41670829f55c2b3582cf2381f5460fef29643036)) (@StarpTech)
+* schema field level usage analytics ([#174](https://github.com/LiLawen/cosmo/issues/174)) ([4f257a7](https://github.com/LiLawen/cosmo/commit/4f257a71984e991be2304b09a083c69da65200d2)) (@StarpTech)
+* upgrade go to 1.23 ([#1473](https://github.com/LiLawen/cosmo/issues/1473)) ([4c29d2d](https://github.com/LiLawen/cosmo/commit/4c29d2d358c2b716a33e35505b080b9be2e1fce3)) (@StarpTech)
+* upgrade minimum required Go version to 1.21 ([#239](https://github.com/LiLawen/cosmo/issues/239)) ([d7fe7da](https://github.com/LiLawen/cosmo/commit/d7fe7daf78fceaf3fdb1679bfa3addef8cdfd67a)) (@fiam)
+* upgrade otelcollector to 0.98.0 ([#727](https://github.com/LiLawen/cosmo/issues/727)) ([d6d02d1](https://github.com/LiLawen/cosmo/commit/d6d02d13ed5be508ada9809f98cd64ceaaa755e3)) (@StarpTech)
+* use clickhouse as metric storage ([#137](https://github.com/LiLawen/cosmo/issues/137)) ([c5e9bf4](https://github.com/LiLawen/cosmo/commit/c5e9bf4b74d32f3cae7da27b6170300c1a462e52)) (@StarpTech)
+
 ## [0.18.1](https://github.com/wundergraph/cosmo/compare/otelcollector@0.18.0...otelcollector@0.18.1) (2025-02-05)
 
 **Note:** Version bump only for package otelcollector
